@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Order Confirmation - Tezzon Charge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .test-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .test-section {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .btn-test {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Test Order Confirmation Page</h1>
+        
+        <div class="test-section">
+            <h3>Step 1: Set Test Data</h3>
+            <p>Click the button below to set test order data in localStorage:</p>
+            <button class="btn btn-primary btn-test" onclick="setTestData()">Set Test Order Data</button>
+            <button class="btn btn-secondary btn-test" onclick="clearTestData()">Clear Test Data</button>
+        </div>
+        
+        <div class="test-section">
+            <h3>Step 2: View Current localStorage Data</h3>
+            <button class="btn btn-info btn-test" onclick="viewLocalStorage()">View localStorage Data</button>
+            <div id="localStorageData" class="mt-3"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>Step 3: Test Order Confirmation Page</h3>
+            <p>After setting test data, click the button below to open the order confirmation page:</p>
+            <button class="btn btn-success btn-test" onclick="openOrderConfirmation()">Open Order Confirmation Page</button>
+        </div>
+        
+        <div class="test-section">
+            <h3>Step 4: Test Billing Page</h3>
+            <p>Test the complete flow from billing to order confirmation:</p>
+            <button class="btn btn-warning btn-test" onclick="openBillingPage()">Open Billing Page</button>
+        </div>
+    </div>
+
+    <script>
+        function setTestData() {
+            const testOrderData = {
+                fullName: "John Doe",
+                email: "john.doe@example.com",
+                phone: "+91 98765 43210",
+                address: "123 Main Street",
+                city: "Mumbai",
+                pincode: "400001",
+                cardName: "John Doe",
+                cardNumber: "1234 5678 9012 3456",
+                expiryDate: "12/25",
+                cvv: "123",
+                cart: [
+                    {
+                        product: "Tezzon Charge SolarX Pro",
+                        price: 45000,
+                        quantity: 1,
+                        total: 45000
+                    },
+                    {
+                        product: "Tezzon Charge Ultra Fast Charger",
+                        price: 35000,
+                        quantity: 2,
+                        total: 70000
+                    }
+                ],
+                total: "₹1,38,600",
+                orderDate: new Date().toISOString(),
+                orderNumber: "TC-2025-001"
+            };
+            
+            localStorage.setItem('lastOrder', JSON.stringify(testOrderData));
+            alert('Test order data has been set in localStorage!');
+        }
+        
+        function clearTestData() {
+            localStorage.removeItem('lastOrder');
+            alert('Test order data has been cleared from localStorage!');
+        }
+        
+        function viewLocalStorage() {
+            const data = localStorage.getItem('lastOrder');
+            const container = document.getElementById('localStorageData');
+            
+            if (data) {
+                try {
+                    const parsedData = JSON.parse(data);
+                    container.innerHTML = `
+                        <div class="alert alert-success">
+                            <h5>lastOrder Data Found:</h5>
+                            <pre>${JSON.stringify(parsedData, null, 2)}</pre>
+                        </div>
+                    `;
+                } catch (e) {
+                    container.innerHTML = `
+                        <div class="alert alert-danger">
+                            <h5>Error parsing data:</h5>
+                            <p>${e.message}</p>
+                            <p>Raw data: ${data}</p>
+                        </div>
+                    `;
+                }
+            } else {
+                container.innerHTML = `
+                    <div class="alert alert-warning">
+                        <h5>No lastOrder data found in localStorage</h5>
+                    </div>
+                `;
+            }
+        }
+        
+        function openOrderConfirmation() {
+            window.open('order-confirmation.html', '_blank');
+        }
+        
+        function openBillingPage() {
+            window.open('billing.html', '_blank');
+        }
+        
+        // Auto-load localStorage data on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            viewLocalStorage();
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

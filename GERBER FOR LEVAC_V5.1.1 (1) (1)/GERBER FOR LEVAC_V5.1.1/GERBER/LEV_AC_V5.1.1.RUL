@@ -1,0 +1,24 @@
+DRC Rules Export File for PCB: C:\Users\HP\Desktop\WORK\LEVAC_V5.1.1\LEV_AC_V5.1.1\PCB\LEV_AC_V5.1.1.PcbDoc
+RuleKind=Clearance|RuleName=Clearance-ALL|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_6|Scope=Board|Minimum=25.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_5|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_2|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance_+3V_1|Scope=Board|Minimum=15.00
+RuleKind=Clearance|RuleName=Clearance_+5VCC|Scope=Board|Minimum=15.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_9|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Stitching AC_PRO_230V|Scope=Board|Minimum=25.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_4|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_3|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Schematic Clearance Constraint_1|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=Clearance_AC_N_230V_1|Scope=Board|Minimum=40.00
+RuleKind=Clearance|RuleName=Clearance_gndhv_1|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance_gndhvEM|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance_+3V3|Scope=Board|Minimum=25.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_1|Scope=Board|Minimum=4.00
+RuleKind=Clearance|RuleName=Clearance_+5VCC_vbat1|Scope=Board|Minimum=15.00
+RuleKind=Clearance|RuleName=Clearance_AC_PRO_230V|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=Clearance_AC_P_SENS|Scope=Board|Minimum=25.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
