@@ -224,6 +224,20 @@ body {
     
 }
 
+/* Tablet view */
+@media (max-width: 992px) {
+    .technology-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .technology-cards .card:nth-child(4),
+    .technology-cards .card:nth-child(5) {
+        grid-column: auto;
+        justify-self: stretch;
+    }
+}
+
 .card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -521,7 +535,14 @@ cite::before {
     
     .technology-cards {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         gap: 20px;
+    }
+    
+    .technology-cards .card:nth-child(4),
+    .technology-cards .card:nth-child(5) {
+        grid-column: auto;
+        justify-self: stretch;
     }
     
     .comparison {
@@ -566,9 +587,16 @@ cite::before {
         padding: 60px 15px;
     }
     
-    .step,
-    .card {
+    .step {
         padding: 30px 20px;
+    }
+    
+    .technology-cards .card {
+        padding: 30px 20px;
+    }
+    
+    .technology-section h2 {
+        font-size: 1.8rem;
     }
     
     .comparison {
