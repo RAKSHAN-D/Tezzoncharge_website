@@ -1,105 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Us | Tezzon Charge</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body {
+      padding-top: 80px;
+      background-color: white;
+    }
 
+    .about-section {
+      padding: 3rem 0;
+    }
+
+    .about-section h2 {
+      color: #ff8f00;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section p {
+      font-size: 1.125rem;
+      max-width: 800px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .vision-mission-card {
+      background: linear-gradient(135deg, #dbeeff 0%, #b3d9ff 100%);
+      color: black;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .vision-mission-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .values-card {
+      background: linear-gradient(135deg, #ff8f00 0%, #ffc947 100%);
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .values-card h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-card {
+      background: linear-gradient(135deg, #dbeeff 0%, #b3d9ff 100%);
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .team-card h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .team-card p {
+      font-size: 0.875rem;
+      color: #666;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #0056b3 40%, white 100%);
+      color: black;
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .section-title {
+      color: #ff8f00;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800" style="background-color: white;">
 
+<body>
   <!-- Nav Bar -->
-  <header class="bg-white shadow" style="background: linear-gradient(135deg, #0056b3 40%, white 100%);">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-       <div class="flex items-center space-x-2">
-  <i class="fas fa-bolt text-orange-600" style="color: #f08b08; font-size: 24px;"></i>
-  <h1 class="text-2xl font-bold text-orange-600" style="color: #f08b08;">Tezzon Charge</h1>
-</div>
-
-      <nav>
-        <a href="index.html" class="text-gray-600 hover:text-orange-600 mx-2">Home</a>
-        <a href="products.html" class="text-gray-600 hover:text-orange-600 mx-2">Products</a>
-        <a href="technology.html" class="text-gray-600 hover:text-orange-600 mx-2">Technology</a>
-        <a href="FAQ.html" class=" text-gray-600 hover:text-orange-600 mx-2">FAQ's</a>
-        <a href="About_us.html" class="font-semibold hover:text-orange-600 mx-2">About Us</a>
-         <a href="Partnerships.html" class="text-gray-600 hover:text-orange-600 mx-2">Partnerships</a>
-      </nav>
-    </div>
-  </header>
+  <div id="navbar-placeholder"></div>
+  <script src="navbar.js"></script>
 
   <!-- About Us Section -->
-  <section class="py-12 px-4 max-w-7xl mx-auto" style="background-color: white;">
-    <h2 class="text-4xl font-bold text-center text-orange-600 mb-6">About Us</h2>
-    <p class="text-lg text-center max-w-3xl mx-auto mb-10">
-      At <span class="font-semibold text-gray-900">Tezzon Charge</span>, we’re building India’s fastest and most reliable charging ecosystem for two-wheeler EVs.
-      Our mission is to make EV charging as quick, easy, and accessible as refueling — within just 10–15 minutes.
-    </p>
+  <section class="about-section">
+    <div class="container">
+      <h2 class="text-center">About Us</h2>
+      <p class="text-center">
+        At <span class="fw-semibold text-dark">Tezzon Charge</span>, we're building India's fastest and most
+        reliable charging ecosystem for two-wheeler EVs.
+        Our mission is to make EV charging as quick, easy, and accessible as refueling — within just 10–15 minutes.
+      </p>
 
-    <div class="grid md:grid-cols-2 gap-10">
-  <!-- Vision Card -->
-  <div class="p-6 rounded-xl shadow-md text-white" style="background: linear-gradient(135deg, #dbeeff 0%, #b3d9ff 100%) ;color: black;">
-    <h3 class="text-2xl font-semibold mb-2">🚀 Our Vision</h3>
-    <p>
-      To become India’s leading EV charging network for two-wheelers, enabling faster adoption of clean energy and smarter mobility.
-    </p>
-  </div>
+      <div class="row">
+        <!-- Vision Card -->
+        <div class="col-md-6">
+          <div class="vision-mission-card">
+            <h3>🚀 Our Vision</h3>
+            <p>
+              To become India's leading EV charging network for two-wheelers, enabling faster adoption of clean energy
+              and smarter mobility.
+            </p>
+          </div>
+        </div>
 
-  <!-- Mission Card -->
-  <div class="p-6 rounded-xl shadow-md text-white" style="background: linear-gradient(135deg, #dbeeff 0%, #b3d9ff 100%); color: black;">
-    <h3 class="text-2xl font-semibold mb-2">🎯 Our Mission</h3>
-    <p>
-      To provide ultra-fast, smart, and eco-friendly EV charging solutions that redefine convenience and accessibility for riders.
-    </p>
-  </div>
-</div>
-
+        <!-- Mission Card -->
+        <div class="col-md-6">
+          <div class="vision-mission-card">
+            <h3>🎯 Our Mission</h3>
+            <p>
+              To provide ultra-fast, smart, and eco-friendly EV charging solutions that redefine convenience and
+              accessibility for riders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Our Values -->
-  <section class="bg-white py-12 px-4">
-    <div class="max-w-6xl mx-auto text-center">
-      <h3 class="text-3xl font-bold text-orange-600 mb-6">Our Core Values</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-orange-50 p-6 rounded-lg shadow-md" style="background: linear-gradient(135deg, #ff8f00 0%, #ffc947 100%)";>
-          <h4 class="text-xl font-semibold mb-2">Speed</h4>
-          <p>Fast charging that matches your lifestyle — charge in minutes, not hours.</p>
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h3 class="text-center section-title">Our Core Values</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="values-card">
+            <h4>Speed</h4>
+            <p>Fast charging that matches your lifestyle — charge in minutes, not hours.</p>
+          </div>
         </div>
-        <div class="bg-orange-50 p-6 rounded-lg shadow-md" style="background: linear-gradient(135deg, #ff8f00 0%, #ffc947 100%)";>
-          <h4 class="text-xl font-semibold mb-2">Sustainability</h4>
-          <p>Helping India move toward a greener future with electric two-wheelers.</p>
+        <div class="col-md-4">
+          <div class="values-card">
+            <h4>Sustainability</h4>
+            <p>Helping India move toward a greener future with electric two-wheelers.</p>
+          </div>
         </div>
-        <div class="bg-orange-50 p-6 rounded-lg shadow-md" style="background: linear-gradient(135deg, #ff8f00 0%, #ffc947 100%)";>
-          <h4 class="text-xl font-semibold mb-2">Trust</h4>
-          <p>Reliable infrastructure backed by strong tech and support.</p>
+        <div class="col-md-4">
+          <div class="values-card">
+            <h4>Trust</h4>
+            <p>Reliable infrastructure backed by strong tech and support.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Team Section (Optional Placeholder) -->
-  <section class="py-12 px-4 max-w-7xl mx-auto text-center">
-    <h3 class="text-3xl font-bold text-orange-600 mb-6">Meet the Team</h3>
-    <p class="mb-8 text-gray-600">Tezzon Charge is built by a passionate group of engineers, designers, and innovators focused on transforming EV mobility in India.</p>
-    <div class="grid md:grid-cols-3 gap-8 justify-items-center max-w-4xl mx-auto">
-      <div class="bg-white p-6 shadow rounded max-w-xs" style="background: linear-gradient(135deg, #dbeeff 0%, #b3d9ff 100%)";>
-        <h4 class="text-xl font-semibold">Vidya M Hudekar</h4>
-      </div>
-      <div class="bg-white p-6 shadow rounded max-w-xs" style="background: linear-gradient(135deg, #dbeeff 0%, #b3d9ff 100%)";>
-        <h4 class="text-xl font-semibold">Rakshan R Doddamani</h4>
-      </div>
-      <div class="bg-white p-6 shadow rounded max-w-xs" style="background: linear-gradient(135deg, #dbeeff 0%, #b3d9ff 100%)";>
-        <h4 class="text-xl font-semibold">Vishalnath S Savle</h4>
-        <p class="text-sm text-gray-500" style="font-weight: bold;">Legal Advisor</p>
+  <!-- Team Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h3 class="section-title">Meet the Team</h3>
+      <p class="mb-5 text-muted">Tezzon Charge is built by a passionate group of engineers, designers, and innovators
+        focused on transforming EV mobility in India.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="team-card">
+            <h4>Vidya M Hudekar</h4>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <h4>Rakshan R Doddamani</h4>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <h4>Vishalnath S Savle</h4>
+            <p>Legal Advisor</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-black text-center py-6 mt-10" style="background: linear-gradient(135deg, #0056b3 40%, white 100%);">
-  <p class="text-lg font-semibold">&copy; 2025 <span class="text-[#ff8f00]">Tezzon Charge</span>. Powered by Earth.</p>
-</footer>
+  <footer>
+    <div class="container">
+      <p class="mb-0 fw-semibold">&copy; 2025 <span style="color: #ff8f00;">Tezzon Charge</span>. Powered by Earth.</p>
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

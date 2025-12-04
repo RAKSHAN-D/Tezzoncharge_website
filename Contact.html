@@ -1,44 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Tezzon Charge</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body {
+      padding-top: 80px;
+      background: linear-gradient(135deg, #e6f2ff 0%, white 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .contact-title {
+      color: #f16506;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-label {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #212529;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-value {
+      color: #495057;
+      margin-bottom: 0;
+    }
+
+    .btn-back {
+      background-color: #f16506;
+      color: white;
+      border-radius: 50px;
+      padding: 0.5rem 1.5rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-back:hover {
+      background-color: #d9534f;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(241, 101, 6, 0.3);
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-white min-h-screen flex items-center justify-center px-4">
 
-  <div class="bg-white shadow-lg rounded-2xl p-8 max-w-xl w-full">
-    <div class="text-center mb-6">
-      <h2 class="text-3xl font-bold text-orange-600 mb-2">Contact Us</h2>
-      <p class="text-gray-600">We’re here to help you 24x7</p>
-    </div>
+<body>
 
-    <div class="mb-6">
-      <p class="text-lg font-semibold text-gray-800">📞 Customer Service</p>
-      <p class="text-gray-700">+91 8447746385</p>
-    </div>
+  <!-- Nav Bar -->
+  <div id="navbar-placeholder"></div>
+  <script src="navbar.js"></script>
 
-    <div class="mb-6">
-      <p class="text-lg font-semibold text-gray-800">📆 Working Hours</p>
-      <p class="text-gray-700">24×7 (Mon - Sun)</p>
-    </div>
+  <div class="container d-flex align-items-center justify-content-center flex-grow-1 py-5">
+    <div class="contact-card">
+      <div class="text-center mb-4">
+        <h2 class="contact-title display-5">Contact Us</h2>
+        <p class="text-muted">We're here to help you 24x7</p>
+      </div>
 
-    <div class="mb-6">
-      <p class="text-lg font-semibold text-gray-800">📧 Support Email</p>
-      <p class="text-blue-600 underline">
-        <a href="mailto:support@Tezzcharge.in">support@Tezzcharge.in</a>
-      </p>
-      <p class="text-sm text-gray-500">Please include your name, contact number, and issue details in the email.</p>
-    </div>
-   
+      <div class="mb-4">
+        <p class="contact-label">📞 Customer Service</p>
+        <p class="contact-value">+91 7619441347</p>
+      </div>
 
-    <div class="text-center mt-8">
-      <a href="index.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-all duration-300">
-        Back to Home
-      </a>
+      <div class="mb-4">
+        <p class="contact-label">📆 Working Hours</p>
+        <p class="contact-value">24×7 (Mon - Sun)</p>
+      </div>
+
+      <div class="mb-4">
+        <p class="contact-label">📧 Support Email</p>
+        <p class="mb-1">
+          <a href="mailto:support@Tezzcharge.in"
+            class="text-primary text-decoration-underline">support@TezzOncharge.in</a>
+        </p>
+        <p class="small text-muted">Please include your name, contact number, and issue details in the email.</p>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="index.html" class="btn-back">
+          Back to Home
+        </a>
+      </div>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,123 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ - Tezzon Charge</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
   <style>
-    .gradient-blue {
+    body {
+      padding-top: 80px;
       background-color: white;
-
     }
-    .orange-text {
+
+    .page-header {
+      background-color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      color: black;
+      font-weight: bold;
+    }
+
+    .page-header p {
+      color: black;
+    }
+
+    .faq-item {
+      border: 1px solid #dee2e6;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .faq-button {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background: linear-gradient(135deg, #ffe5cc 0%, #ffd4a3 100%);
+      border: none;
+      text-align: left;
+      font-weight: 600;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+
+    .faq-button:hover {
+      background: linear-gradient(135deg, #ffd4a3 0%, #ffc47a 100%);
+    }
+
+    .faq-button .toggle-icon {
       color: #ff8f00;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .faq-answer {
+      padding: 1rem 1.5rem;
+      background-color: white;
+      color: #666;
+      display: none;
+    }
+
+    .faq-answer.show {
+      display: block;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #89CFF0 0%, #007bff 100%);
+      color: black;
+      padding: 2rem 0;
+      margin-top: 3rem;
     }
   </style>
 </head>
-<body class="bg-white text-black font-sans">
- <!-- Nav Bar -->
-    <header class="bg-white shadow" style="background: linear-gradient(135deg, #0056b3 40%, white 100%);">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-  <i class="fas fa-bolt text-orange-600" style="color: #f08b08; font-size: 24px;"></i>
-  <h1 class="text-2xl font-bold text-orange-600" style="color: #f08b08;">Tezzon Charge</h1>
-</div>
-      <nav>
-        <a href="index.html" class="text-gray-600 hover:text-orange-600 mx-2">Home</a>
-         <a href="products.html" class="text-gray-600 hover:text-orange-600 mx-2">Products</a>
-        <a href="technology.html" class="text-gray-600 hover:text-orange-600 mx-2">Technology</a>
-        <a href="FAQ.html" class=" font-semibold hover:text-orange-600 mx-2">FAQ's</a>
-        <a href="About_us.html" class="text-gray-600 hover:text-orange-600 mx-2">About</a>
-        <a href="Partnerships.html" class=" text-gray-600 hover:text-orange-600 mx-2">Partnerships</a>
-      </nav>
-    </div>
-  </header>
+
+<body>
+  <!-- Nav Bar -->
+  <div id="navbar-placeholder"></div>
+  <script src="navbar.js"></script>
+
   <!-- Header -->
-  <header class="gradient-blue text-white p-6 text-center">
-    <h1 class="text-4xl font-bold" style="color: black;">Frequently Asked Questions</h1>
-    <p class="text-lg mt-2 " style= "color: black;">Answers to common queries about Tezzon Charge</p>
+  <header class="page-header">
+    <div class="container">
+      <h1 class="display-4">Frequently Asked Questions</h1>
+      <p class="lead">Answers to common queries about Tezzon Charge</p>
+    </div>
   </header>
 
   <!-- FAQ Section -->
-  <section class="max-w-3xl mx-auto mt-10 p-4">
-    <!-- FAQ Item -->
-    <div class="space-y-4">
-      <!-- Single FAQ -->
-      <div class="border border-gray-300 rounded-lg overflow-hidden">
-  <button class="w-full flex justify-between items-center p-4 bg-orange-100 hover:bg-orange-200 focus:outline-none" onclick="toggleFAQ(this)">
-    <span class="font-semibold">What is Tezzon Charge?</span>
-    <span class="text-orange-500 text-xl">+</span>
-  </button>
-  <div class="hidden px-4 py-2 bg-white text-gray-700">
-    Tezzon Charge is an ultra-fast EV charging network for two-wheelers in India.
-  </div>
-</div>
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <button class="faq-button" onclick="toggleFAQ(this)">
+            <span>What is Tezzon Charge?</span>
+            <span class="toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Tezzon Charge is an ultra-fast EV charging network for two-wheelers in India.
+          </div>
+        </div>
 
-<div class="border border-gray-300 rounded-lg overflow-hidden">
-  <button class="w-full flex justify-between items-center p-4 bg-orange-100 hover:bg-orange-200 focus:outline-none" onclick="toggleFAQ(this)">
-    <span class="font-semibold">How do I use a Tezzon Charge station?</span>
-    <span class="text-orange-500 text-xl">+</span>
-  </button>
-  <div class="hidden px-4 py-2 bg-white text-gray-700">
-    Scan the QR code using our app, plug in your vehicle, and start charging.
-  </div>
-</div>
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-button" onclick="toggleFAQ(this)">
+            <span>How do I use a Tezzon Charge station?</span>
+            <span class="toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Scan the QR code using our app, plug in your vehicle, and start charging.
+          </div>
+        </div>
 
-<div class="border border-gray-300 rounded-lg overflow-hidden">
-  <button class="w-full flex justify-between items-center p-4 bg-orange-100 hover:bg-orange-200 focus:outline-none" onclick="toggleFAQ(this)">
-    <span class="font-semibold">Where can I download the Tezzon Charge app?</span>
-    <span class="text-orange-500 text-xl">+</span>
-  </button>
-  <div class="hidden px-4 py-2 bg-white text-gray-700">
-    Our app will soon be available on the Google Play Store and Apple App Store.
-  </div>
-</div>
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-button" onclick="toggleFAQ(this)">
+            <span>Where can I download the Tezzon Charge app?</span>
+            <span class="toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Our app will soon be available on the Google Play Store and Apple App Store.
+          </div>
+        </div>
 
-<div class="border border-gray-300 rounded-lg overflow-hidden">
-  <button class="w-full flex justify-between items-center p-4 bg-orange-100 hover:bg-orange-200 focus:outline-none" onclick="toggleFAQ(this)">
-    <span class="font-semibold">How fast is Tezzon Charge compared to normal charging?</span>
-    <span class="text-orange-500 text-xl">+</span>
-  </button>
-  <div class="hidden px-4 py-2 bg-white text-gray-700">
-    Our Level 3 system reduces charging time from 6–7 hours to just 15 minutes.
-  </div>
-</div>
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-button" onclick="toggleFAQ(this)">
+            <span>How fast is Tezzon Charge compared to normal charging?</span>
+            <span class="toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Our Level 3 system reduces charging time from 6–7 hours to just 15 minutes.
+          </div>
+        </div>
 
-<div class="border border-gray-300 rounded-lg overflow-hidden">
-  <button class="w-full flex justify-between items-center p-4 bg-orange-100 hover:bg-orange-200 focus:outline-none" onclick="toggleFAQ(this)">
-    <span class="font-semibold">Where are Tezzon Charge stations located?</span>
-    <span class="text-orange-500 text-xl">+</span>
-  </button>
-  <div class="hidden px-4 py-2 bg-white text-gray-700">
-    Currently, we’re rolling out across major areas in Bangalore.
-  </div>
-</div>
-
-
-      <!-- Add more FAQs here if needed -->
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <button class="faq-button" onclick="toggleFAQ(this)">
+            <span>Where are Tezzon Charge stations located?</span>
+            <span class="toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Currently, we're rolling out across major areas in Bangalore.
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="mt-10 p-6 text-center bg-black text-white" style="background: linear-gradient(135deg, #89CFF0 0%, #007bff 100%); color: black;">
-    &copy; 2025 Tezzon Charge | Powered by Earth 
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Tezzon Charge | Powered by Earth</p>
+    </div>
   </footer>
 
   <!-- JavaScript for Accordion -->
   <script>
     function toggleFAQ(button) {
       const answer = button.nextElementSibling;
-      const icon = button.querySelector('span:last-child');
-      if (answer.classList.contains('hidden')) {
-        answer.classList.remove('hidden');
-        icon.textContent = '−';
-      } else {
-        answer.classList.add('hidden');
+      const icon = button.querySelector('.toggle-icon');
+
+      // Close all other FAQs
+      document.querySelectorAll('.faq-answer').forEach(item => {
+        if (item !== answer) {
+          item.classList.remove('show');
+          item.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
+        }
+      });
+
+      // Toggle current FAQ
+      if (answer.classList.contains('show')) {
+        answer.classList.remove('show');
         icon.textContent = '+';
+      } else {
+        answer.classList.add('show');
+        icon.textContent = '−';
       }
     }
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

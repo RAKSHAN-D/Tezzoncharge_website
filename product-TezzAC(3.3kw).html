@@ -1,500 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tezz-AC 3.3kW - Industrial AC Charging Socket | Tezzon Charge</title>
-  <link rel="stylesheet" href="products.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="products.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body style="font-family: 'Inter', sans-serif; background-color:white">
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background: linear-gradient(135deg, #0056b3 0%, white 100%);">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <i class="fas fa-bolt me-2" style="color: #ff8f00;"></i>Tezzon Charge
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="technology.html"><i class="fas fa-cog me-1"></i>Technology</a></li>
-          <li class="nav-item"><a class="nav-link active" href="products.html"><i class="fas fa-box me-1"></i>Products</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- Navigation Bar -->
+  <div id="navbar-placeholder"></div>
+  <script src="navbar.js"></script>
 
   <!-- Product Detail Section -->
   <section class="container mt-4 pt-4">
     <div class="row">
       <!-- Product Image -->
       <div class="container py-5">
-  <div class="row align-items-center">
-    <!-- Left: Image Slider -->
-    <div class="col-lg-6 text-start" style="margin-top: 50px; padding-left: 0;">
-      <div class="image-slider">
-        <div class="slider-wrapper">
-          <div class="slider-image active">
-            <img src="assets/FINAL_PRODUCTS/TEZZ_AC_2.png" alt="Tezz-AC 3.3kW - Main View">
+        <div class="row align-items-center">
+          <!-- Left: Image Slider -->
+          <div class="col-lg-6 text-start" style="margin-top: 50px; padding-left: 0;">
+            <div class="image-slider">
+              <div class="slider-wrapper">
+                <div class="slider-image active">
+                  <img src="assets/FINAL_PRODUCTS/TEZZ_AC_2.png" alt="Tezz-AC 3.3kW - Main View">
+                </div>
+                <div class="slider-image">
+                  <img src="assets/FINAL_PRODUCTS/TEZZ_AC (2).png" alt="Tezz-AC 3.3kW - View 2">
+                </div>
+                <div class="slider-image">
+                  <img src="assets/FINAL_PRODUCTS/Tezz_AC(3).jpg" alt="Tezz-AC 3.3kW - View 3">
+                </div>
+              </div>
+              <button class="slider-nav prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="slider-nav next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="slider-dots">
+                <span class="slider-dot active" onclick="goToSlide(0)"></span>
+                <span class="slider-dot" onclick="goToSlide(1)"></span>
+                <span class="slider-dot" onclick="goToSlide(2)"></span>
+              </div>
+            </div>
+            <div class="mt-3">
+            </div>
           </div>
-          <div class="slider-image">
-            <img src="assets/FINAL_PRODUCTS/TEZZ_AC (2).png" alt="Tezz-AC 3.3kW - View 2">
-          </div>
-          <div class="slider-image">
-            <img src="assets/FINAL_PRODUCTS/Tezz_AC(3).jpg" alt="Tezz-AC 3.3kW - View 3">
+
+
+          <!-- Right: Product Info -->
+          <div class="col-lg-6 product-info">
+            <h1 class="display-5 fw-bold text-primary mb-3">Tezz-AC 3.3kW</h1>
+            <p class="text-muted mb-2"><strong>Charging Sockets for All EVs</strong></p>
+            <p class="lead text-muted mb-4">Industrial-grade AC charging socket for commercial and public use.</p>
+
+            <!-- Compatibility Info -->
+            <div class="mb-3">
+              <p class="mb-2"><strong>Power Rating:</strong> <span class="text-primary">3.3kW</span></p>
+              <p class="mb-2"><strong>Compatibility:</strong> <span style="font-size: 1.1em;">🏍️🛺🚗</span> 2/3/4
+                Wheeler</p>
+              <p class="mb-2"><strong>Socket type:</strong> Industrial AC Socket</p>
+              <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Compatible with all EVs</p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="mb-4">
+              <h4 class="fw-bold text-primary mb-3">
+                <i class="fas fa-star text-warning me-2"></i>Key Features
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>IoT Enabled for Discovery &
+                  Billing</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Electrical Safety Features</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Passive Income by Hosting</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Energy Metering for Tracking</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Industrial-Grade Socket</li>
+              </ul>
+            </div>
+
+            <!-- View Brochure Button -->
+            <div class="mt-4">
+              <a href="brochure-tezz-ac-3.3kw.html" target="_blank" class="btn btn-lg"
+                style="background: linear-gradient(135deg, #ff8f00 0%, #ff7043 100%); color: white; box-shadow: 0 4px 15px rgba(255, 143, 0, 0.3);">
+                <i class="fas fa-file-alt me-2"></i>View Product Brochure
+              </a>
+              <p class="text-muted small mt-2">
+                <i class="fas fa-info-circle me-1"></i>Comprehensive product information & specifications
+              </p>
+            </div>
           </div>
         </div>
-        <button class="slider-nav prev" onclick="changeSlide(-1)">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="slider-nav next" onclick="changeSlide(1)">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <div class="slider-dots">
-          <span class="slider-dot active" onclick="goToSlide(0)"></span>
-          <span class="slider-dot" onclick="goToSlide(1)"></span>
-          <span class="slider-dot" onclick="goToSlide(2)"></span>
+      </div>
+
+
+      <!-- Removed standalone generic ADD TO CART button -->
+
+
+      <!-- Detailed Specifications -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-cogs me-2"></i>Technical Specifications</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-bolt me-2"></i>Power Specifications</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Output Power Rating:</strong> 3.3kW</li>
+                    <li class="mb-2"><strong>Input Voltage:</strong> 220-240V AC</li>
+                    <li class="mb-2"><strong>Output Voltage:</strong> 220-240V AC</li>
+                    <li class="mb-2"><strong>Maximum Output Current:</strong> 16A</li>
+                    <li class="mb-2"><strong>Rated Frequency:</strong> 50 Hz</li>
+                    <li class="mb-2"><strong>Charger Connector Type:</strong> Industrial AC Socket (IEC60309) / Type D -
+                      Domestic 5/15A Socket</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-cog me-2"></i>Physical & Build</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Installation Type:</strong> Wall Mount or Stand Mount</li>
+                    <li class="mb-2"><strong>Dimensions:</strong> 300mm × 230mm × 120mm</li>
+                    <li class="mb-2"><strong>Weight:</strong> 4.9 kg</li>
+                    <li class="mb-2"><strong>Weather Protection:</strong> IP 54</li>
+                    <li class="mb-2"><strong>Connectivity:</strong> BLE and Wi-Fi</li>
+                    <li class="mb-2"><strong>Warranty:</strong> 1 Year</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-   <div class="mt-3">
-   </div>
-    </div>
 
-
-    <!-- Right: Product Info -->
-    <div class="col-lg-6 product-info">
-      <h1 class="display-5 fw-bold text-primary mb-3">Tezz-AC 3.3kW</h1>
-      <p class="text-muted mb-2"><strong>Charging Sockets for All EVs</strong></p>
-      <p class="lead text-muted mb-4">Industrial-grade AC charging socket for commercial and public use.</p>
-      
-      <!-- Compatibility Info -->
-      <div class="mb-3">
-        <p class="mb-2"><strong>Power Rating:</strong> <span class="text-primary">3.3kW</span></p>
-        <p class="mb-2"><strong>Compatibility:</strong> <span style="font-size: 1.1em;">🏍️🛺🚗</span> 2/3/4 Wheeler</p>
-        <p class="mb-2"><strong>Socket type:</strong> Industrial AC Socket</p>
-        <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Compatible with all EVs</p>
+      <!-- Benefits Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-chart-line me-2"></i>Why Buy Tezz-AC 3.3kW?</h3>
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-wifi fa-3x text-primary mb-3"></i>
+                <h5 class="fw-bold">IoT Enabled</h5>
+                <p class="text-muted">Discovery, authentication, power theft protection and billing</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-shield-alt fa-3x text-warning mb-3"></i>
+                <h5 class="fw-bold">Electrical Safety</h5>
+                <p class="text-muted">Multiple safety features for secure charging</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-rupee-sign fa-3x text-success mb-3"></i>
+                <h5 class="fw-bold">Passive Income</h5>
+                <p class="text-muted">Earn by hosting public charging</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-chart-bar fa-3x text-info mb-3"></i>
+                <h5 class="fw-bold">Energy Metering</h5>
+                <p class="text-muted">Track consumption and optimize usage</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <!-- Key Features -->
-      <div class="mb-4">
-        <h4 class="fw-bold text-primary mb-3">
-          <i class="fas fa-star text-warning me-2"></i>Key Features
-        </h4>
-        <ul class="list-unstyled">
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>IoT Enabled for Discovery & Billing</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Electrical Safety Features</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Passive Income by Hosting</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Energy Metering for Tracking</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Industrial-Grade Socket</li>
-        </ul>
+
+      <!-- Advanced Features -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-rocket me-2"></i>Smart Features & Protection</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-microchip me-2"></i>Smart Features</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OTA (Over-The-Air) Support</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>QR Code User Authentication</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Charging Indication</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Inbuilt Energy Measurement</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OCPP 1.6J Support</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Inbuilt Battery Backup</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-shield-alt me-2"></i>Protection & Safety</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Auto Power Cut-Off</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Power Theft Protection</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Over & Under Voltage Protection</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Charger Over-temperature Protection
+                    </li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Emergency Push Button</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Integrated MCB & RCCB Protection</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- View Brochure Button -->
-      <div class="mt-4">
-        <a href="brochure-tezz-ac-3.3kw.html" target="_blank" class="btn btn-lg" 
-           style="background: linear-gradient(135deg, #ff8f00 0%, #ff7043 100%); color: white; box-shadow: 0 4px 15px rgba(255, 143, 0, 0.3);">
-          <i class="fas fa-file-alt me-2"></i>View Product Brochure
+      <!-- Usage & Support -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-tools me-2"></i>Usage & Support</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-home me-2"></i>Suggested Usage</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Public Use / Government Tenders</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Commercial establishments</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Residential complexes & apartments
+                    </li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Office & workplace parking</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Highway charging stations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-headset me-2"></i>Customer Support</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>24/7 Support:</strong>
+                      Available 365 days</li>
+                    <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Support Hotline:</strong> +91
+                      8447746385</li>
+                    <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Sales Hotline:</strong> +91
+                      8045688455</li>
+                    <li class="mb-2"><i class="fas fa-clock text-success me-2"></i><strong>Sales Hours:</strong> 9:00am
+                      - 6:00pm (Mon-Sun)</li>
+                    <li class="mb-2"><i class="fas fa-certificate text-success me-2"></i>1 Year Warranty</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Description -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-info-circle me-2"></i>Product Description</h3>
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <p class="mb-3">
+                Experience the future of EV charging with <strong>Tezz-AC</strong>. Our cutting-edge charging point is
+                certified by ARAI,
+                guaranteeing top-notch safety and quality standards.
+              </p>
+              <p class="mb-3">
+                <strong>Tezz-AC 3.3kW</strong> is an industrial-grade AC charging socket designed for commercial and
+                public use.
+                With IoT-enabled features, it offers seamless discovery, authentication, and billing capabilities.
+              </p>
+              <p class="mb-0">
+                Offering a seamless, intelligent, and secure charging solution, Tezz-AC sets a new benchmark for
+                user-friendly
+                EV charging in India. Perfect for government tenders, commercial spaces, and public charging
+                infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-question-circle me-2"></i>Frequently Asked Questions
+          </h3>
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  Does Tezz-AC support industrial-grade sockets?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, it is compatible with industrial sockets, ensuring durability and high-power delivery.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  Does Tezz-AC come with a battery backup?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, it features inbuilt battery backup, ensuring essential functions like monitoring and session
+                  recording even during power failures.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  What is the IP rating of Tezz-AC, and what does it mean?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The charger is IP54-rated, meaning it has limited dust and water splash resistance, making it ideal
+                  for outdoor and indoor use.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+                  Does Tezz-AC have an integrated MCB?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, it features an integrated Miniature Circuit Breaker (MCB) that protects against electrical faults
+                  and ensures enhanced safety.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
+                  What do the Smart LED Indicators on Tezz-AC indicate?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The LED indicators provide real-time charging status, power connection, fault alerts, and connectivity
+                  updates.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq6">
+                  Does the charger have an auto power cut-off feature?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! The smart auto power cut-off prevents overcharging and automatically stops power flow when
+                  charging is complete or when inactive.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq7">
+                  Can Tezz-AC prevent unauthorized power usage?
+                </button>
+              </h2>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Absolutely! It has power theft prevention mechanisms, ensuring that only authenticated users can
+                  access the charger.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq8">
+                  How can I monitor my energy usage with Tezz-AC?
+                </button>
+              </h2>
+              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can track energy consumption in real time through the Tezzon Charge mobile app (available for
+                  Android & iOS).
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 9 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq9">
+                  What after-sales support does Tezzon Charge provide for Tezz-AC users?
+                </button>
+              </h2>
+              <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The charger is backed by 24/7 customer support for troubleshooting, installation guidance, and
+                  maintenance assistance.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 10 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq10">
+                  What is the warranty period for Tezz-AC?
+                </button>
+              </h2>
+              <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The Tezz-AC comes with a 1-year standard warranty from the date of purchase. This covers manufacturing
+                  defects and issues arising under normal usage.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 11 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq11">
+                  What is ARAI Certification?
+                </button>
+              </h2>
+              <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  ARAI (Automotive Research Association of India) certification is a mandatory safety and compliance
+                  certification for automotive and EV-related products in India. It ensures that electric vehicle
+                  chargers, batteries, and other automotive components meet Indian safety, performance, and
+                  environmental standards.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-certificate me-2"></i>Certifications</h3>
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-success fa-3x me-4"></i>
+                <div>
+                  <h5 class="fw-bold mb-2">ARAI Certified</h5>
+                  <p class="text-muted mb-0">
+                    An ARAI certificate is a certification from the Automotive Research Association of India (ARAI) that
+                    a vehicle
+                    or component meets Indian safety, environmental, and performance standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-5">
+        <a href="products.html" class="btn btn-outline-primary btn-lg me-3"
+          style="background: linear-gradient(135deg, #ffb347 0%, #ff8f00 50%, #ff7043 500%); color: #000;">
+          <i class="fas fa-arrow-left me-2"></i>Back to Products
         </a>
-        <p class="text-muted small mt-2">
-          <i class="fas fa-info-circle me-1"></i>Comprehensive product information & specifications
-        </p>
       </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Removed standalone generic ADD TO CART button -->
-
-
-    <!-- Detailed Specifications -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-cogs me-2"></i>Technical Specifications</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-bolt me-2"></i>Power Specifications</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><strong>Output Power Rating:</strong> 3.3kW</li>
-                  <li class="mb-2"><strong>Input Voltage:</strong> 220-240V AC</li>
-                  <li class="mb-2"><strong>Output Voltage:</strong> 220-240V AC</li>
-                  <li class="mb-2"><strong>Maximum Output Current:</strong> 16A</li>
-                  <li class="mb-2"><strong>Rated Frequency:</strong> 50 Hz</li>
-                  <li class="mb-2"><strong>Charger Connector Type:</strong> Industrial AC Socket (IEC60309) / Type D - Domestic 5/15A Socket</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-cog me-2"></i>Physical & Build</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><strong>Installation Type:</strong> Wall Mount or Stand Mount</li>
-                  <li class="mb-2"><strong>Dimensions:</strong> 300mm × 230mm × 120mm</li>
-                  <li class="mb-2"><strong>Weight:</strong> 4.9 kg</li>
-                  <li class="mb-2"><strong>Weather Protection:</strong> IP 54</li>
-                  <li class="mb-2"><strong>Connectivity:</strong> BLE and Wi-Fi</li>
-                  <li class="mb-2"><strong>Warranty:</strong> 1 Year</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Benefits Section -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-chart-line me-2"></i>Why Buy Tezz-AC 3.3kW?</h3>
-        <div class="row">
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-wifi fa-3x text-primary mb-3"></i>
-              <h5 class="fw-bold">IoT Enabled</h5>
-              <p class="text-muted">Discovery, authentication, power theft protection and billing</p>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-shield-alt fa-3x text-warning mb-3"></i>
-              <h5 class="fw-bold">Electrical Safety</h5>
-              <p class="text-muted">Multiple safety features for secure charging</p>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-rupee-sign fa-3x text-success mb-3"></i>
-              <h5 class="fw-bold">Passive Income</h5>
-              <p class="text-muted">Earn by hosting public charging</p>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-chart-bar fa-3x text-info mb-3"></i>
-              <h5 class="fw-bold">Energy Metering</h5>
-              <p class="text-muted">Track consumption and optimize usage</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Advanced Features -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-rocket me-2"></i>Smart Features & Protection</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-microchip me-2"></i>Smart Features</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OTA (Over-The-Air) Support</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>QR Code User Authentication</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Charging Indication</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Inbuilt Energy Measurement</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OCPP 1.6J Support</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Inbuilt Battery Backup</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-shield-alt me-2"></i>Protection & Safety</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Auto Power Cut-Off</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Power Theft Protection</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Over & Under Voltage Protection</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Charger Over-temperature Protection</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Emergency Push Button</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Integrated MCB & RCCB Protection</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Usage & Support -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-tools me-2"></i>Usage & Support</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-home me-2"></i>Suggested Usage</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Public Use / Government Tenders</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Commercial establishments</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Residential complexes & apartments</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Office & workplace parking</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Highway charging stations</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-headset me-2"></i>Customer Support</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>24/7 Support:</strong> Available 365 days</li>
-                  <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Support Hotline:</strong> +91 8447746385</li>
-                  <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Sales Hotline:</strong> +91 8045688455</li>
-                  <li class="mb-2"><i class="fas fa-clock text-success me-2"></i><strong>Sales Hours:</strong> 9:00am - 6:00pm (Mon-Sun)</li>
-                  <li class="mb-2"><i class="fas fa-certificate text-success me-2"></i>1 Year Warranty</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Description -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-info-circle me-2"></i>Product Description</h3>
-        <div class="card border-0 shadow-sm">
-          <div class="card-body">
-            <p class="mb-3">
-              Experience the future of EV charging with <strong>Tezz-AC</strong>. Our cutting-edge charging point is certified by ARAI, 
-              guaranteeing top-notch safety and quality standards.
-            </p>
-            <p class="mb-3">
-              <strong>Tezz-AC 3.3kW</strong> is an industrial-grade AC charging socket designed for commercial and public use. 
-              With IoT-enabled features, it offers seamless discovery, authentication, and billing capabilities.
-            </p>
-            <p class="mb-0">
-              Offering a seamless, intelligent, and secure charging solution, Tezz-AC sets a new benchmark for user-friendly 
-              EV charging in India. Perfect for government tenders, commercial spaces, and public charging infrastructure.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-question-circle me-2"></i>Frequently Asked Questions</h3>
-        <div class="accordion" id="faqAccordion">
-          <!-- FAQ 1 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                Does Tezz-AC support industrial-grade sockets?
-              </button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes, it is compatible with industrial sockets, ensuring durability and high-power delivery.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 2 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                Does Tezz-AC come with a battery backup?
-              </button>
-            </h2>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes, it features inbuilt battery backup, ensuring essential functions like monitoring and session recording even during power failures.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 3 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                What is the IP rating of Tezz-AC, and what does it mean?
-              </button>
-            </h2>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The charger is IP54-rated, meaning it has limited dust and water splash resistance, making it ideal for outdoor and indoor use.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 4 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                Does Tezz-AC have an integrated MCB?
-              </button>
-            </h2>
-            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes, it features an integrated Miniature Circuit Breaker (MCB) that protects against electrical faults and ensures enhanced safety.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 5 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                What do the Smart LED Indicators on Tezz-AC indicate?
-              </button>
-            </h2>
-            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The LED indicators provide real-time charging status, power connection, fault alerts, and connectivity updates.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 6 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                Does the charger have an auto power cut-off feature?
-              </button>
-            </h2>
-            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes! The smart auto power cut-off prevents overcharging and automatically stops power flow when charging is complete or when inactive.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 7 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                Can Tezz-AC prevent unauthorized power usage?
-              </button>
-            </h2>
-            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Absolutely! It has power theft prevention mechanisms, ensuring that only authenticated users can access the charger.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 8 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
-                How can I monitor my energy usage with Tezz-AC?
-              </button>
-            </h2>
-            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                You can track energy consumption in real time through the Tezzon Charge mobile app (available for Android & iOS).
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 9 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
-                What after-sales support does Tezzon Charge provide for Tezz-AC users?
-              </button>
-            </h2>
-            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The charger is backed by 24/7 customer support for troubleshooting, installation guidance, and maintenance assistance.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 10 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
-                What is the warranty period for Tezz-AC?
-              </button>
-            </h2>
-            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The Tezz-AC comes with a 1-year standard warranty from the date of purchase. This covers manufacturing defects and issues arising under normal usage.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 11 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
-                What is ARAI Certification?
-              </button>
-            </h2>
-            <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                ARAI (Automotive Research Association of India) certification is a mandatory safety and compliance certification for automotive and EV-related products in India. It ensures that electric vehicle chargers, batteries, and other automotive components meet Indian safety, performance, and environmental standards.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Certifications -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-certificate me-2"></i>Certifications</h3>
-        <div class="card border-0 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <i class="fas fa-check-circle text-success fa-3x me-4"></i>
-              <div>
-                <h5 class="fw-bold mb-2">ARAI Certified</h5>
-                <p class="text-muted mb-0">
-                  An ARAI certificate is a certification from the Automotive Research Association of India (ARAI) that a vehicle 
-                  or component meets Indian safety, environmental, and performance standards.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <div class="text-center my-5">
-      <a href="products.html" class="btn btn-outline-primary btn-lg me-3" style="background: linear-gradient(135deg, #ffb347 0%, #ff8f00 50%, #ff7043 500%); color: #000;">
-        <i class="fas fa-arrow-left me-2"></i>Back to Products
-      </a>
-    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-4 mt-5" style="background: linear-gradient(135deg, #0056b3 0%, white 100%); color: #000;">
+  <footer class="text-center py-4 mt-5"
+    style="background: linear-gradient(135deg, #0056b3 0%, white 100%); color: #000;">
     <p class="mb-0 fw-medium">&copy; 2025 Tezzon Charge | Powering the future of mobility ⚡</p>
   </footer>
 
-     <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Image Slider Script -->
   <script>
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slider-image');
     const dots = document.querySelectorAll('.slider-dot');
     const totalSlides = slides.length;
-    
+
     let autoPlayInterval = setInterval(() => { changeSlide(1); }, 4000);
-    
+
     function changeSlide(direction) {
       slides[currentSlide].classList.remove('active');
       dots[currentSlide].classList.remove('active');
@@ -504,7 +533,7 @@
       clearInterval(autoPlayInterval);
       autoPlayInterval = setInterval(() => { changeSlide(1); }, 4000);
     }
-    
+
     function goToSlide(slideIndex) {
       slides[currentSlide].classList.remove('active');
       dots[currentSlide].classList.remove('active');
@@ -520,17 +549,20 @@
     .product-image-container img {
       transition: transform 0.3s ease;
     }
+
     .product-image-container img:hover {
       transform: scale(1.05);
     }
+
     .card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
     }
-    
+
     /* Image Slider Styles */
     .image-slider {
       position: relative;
@@ -538,15 +570,15 @@
       height: 560px;
       overflow: hidden;
       border-radius: 10px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
-    
+
     .slider-wrapper {
       position: relative;
       width: 100%;
       height: 100%;
     }
-    
+
     .slider-image {
       position: absolute;
       width: 100%;
@@ -558,18 +590,18 @@
       justify-content: center;
       background: #f8f9fa;
     }
-    
+
     .slider-image.active {
       opacity: 1;
     }
-    
+
     .slider-image img {
       max-width: 100%;
       height: auto;
       max-height: 560px;
       object-fit: contain;
     }
-    
+
     .slider-nav {
       position: absolute;
       top: 50%;
@@ -585,15 +617,20 @@
       transition: all 0.3s ease;
       z-index: 10;
     }
-    
+
     .slider-nav:hover {
       background: rgba(0, 86, 179, 1);
       transform: translateY(-50%) scale(1.1);
     }
-    
-    .slider-nav.prev { left: 15px; }
-    .slider-nav.next { right: 15px; }
-    
+
+    .slider-nav.prev {
+      left: 15px;
+    }
+
+    .slider-nav.next {
+      right: 15px;
+    }
+
     .slider-dots {
       position: absolute;
       bottom: 20px;
@@ -603,7 +640,7 @@
       gap: 12px;
       z-index: 10;
     }
-    
+
     .slider-dot {
       width: 12px;
       height: 12px;
@@ -613,33 +650,44 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
-    
+
     .slider-dot.active {
       background: #0056b3;
       transform: scale(1.3);
     }
-    
+
     /* Product hero image full width within its column */
     .product-hero-img {
       width: 100%;
       height: auto;
       object-fit: contain;
       border-radius: 10px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       max-height: 560px;
     }
 
     /* Tighter gutters and section spacing */
-    .container .row { 
-      --bs-gutter-x: 1rem; 
-      --bs-gutter-y: 1.25rem; 
+    .container .row {
+      --bs-gutter-x: 1rem;
+      --bs-gutter-y: 1.25rem;
     }
-    .row.mt-5 { margin-top: 2rem !important; }
+
+    .row.mt-5 {
+      margin-top: 2rem !important;
+    }
 
     /* Slightly lower the right-side info column */
-    .product-info { margin-top: 0.75rem; }
-    @media (min-width: 768px) { .product-info { margin-top: 1.25rem; } }
+    .product-info {
+      margin-top: 0.75rem;
+    }
+
+    @media (min-width: 768px) {
+      .product-info {
+        margin-top: 1.25rem;
+      }
+    }
   </style>
 
 </body>
+
 </html>

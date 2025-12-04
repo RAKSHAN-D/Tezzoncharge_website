@@ -1,475 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Tezzon Ultra DC 12kW Dual Gun - Ultra-fast DC charger for 2 & 3 wheeler EVs. Gain 160km range in 15 minutes. Type 6 & Type 7 dual connector support."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Tezzon Ultra DC 12kW Dual Gun - Ultra-fast DC charger for 2 & 3 wheeler EVs. Gain 160km range in 15 minutes. Type 6 & Type 7 dual connector support." />
   <title>Tezzon Ultra DC 12kW Dual Gun Type 6 & Type 7 - Fast Charger | Tezzon Charge</title>
-  <link rel="stylesheet" href="products.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="products.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body style="font-family: 'Inter', sans-serif; background-color:white">
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background: linear-gradient(135deg, #0056b3 0%, white 100%);">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <i class="fas fa-bolt me-2" style="color: #ff8f00;"></i>Tezzon Charge
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="technology.html"><i class="fas fa-cog me-1"></i>Technology</a></li>
-          <li class="nav-item"><a class="nav-link active" href="products.html"><i class="fas fa-box me-1"></i>Products</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- Navigation Bar -->
+  <div id="navbar-placeholder"></div>
+  <script src="navbar.js"></script>
 
   <!-- Product Detail Section -->
   <section class="container mt-4 pt-4">
     <div class="row">
       <!-- Product Image -->
       <div class="container py-5">
-  <div class="row align-items-center">
-    <!-- Left: Image Slider -->
-    <div class="col-lg-6 text-start" style="margin-top: 50px; padding-left: 0;">
-      <div class="image-slider">
-        <div class="slider-wrapper">
-          <div class="slider-image active"><img src="assets/FINAL_PRODUCTS/tezz ultra 4G Enabled.jpg" alt="Tezzon Ultra DC 12kW Dual Gun - Main View"></div>
-          <div class="slider-image"><img src="assets/FINAL_PRODUCTS/Tezzon_Ultra_Type7(2).jpg" alt="Tezzon Ultra DC 12kW Dual Gun - Type 7 View"></div>
-          <div class="slider-image"><img src="assets/FINAL_PRODUCTS/Tezzon_Ultra_Type6(2).jpg" alt="Tezzon Ultra DC 12kW Dual Gun - Type 6 View"></div>
-       <div class="slider-image"><img src="assets/FINAL_PRODUCTS/Tezzon_Ultra_2G (3).jpg" alt="Tezzon Ultra DC 12kW Dual Gun - Full View"></div>
+        <div class="row align-items-center">
+          <!-- Left: Image Slider -->
+          <div class="col-lg-6 text-start" style="margin-top: 50px; padding-left: 0;">
+            <div class="image-slider">
+              <div class="slider-wrapper">
+                <div class="slider-image active"><img src="assets/FINAL_PRODUCTS/tezz ultra 4G Enabled.jpg"
+                    alt="Tezzon Ultra DC 12kW Dual Gun - Main View"></div>
+                <div class="slider-image"><img src="assets/FINAL_PRODUCTS/Tezzon_Ultra_Type7(2).jpg"
+                    alt="Tezzon Ultra DC 12kW Dual Gun - Type 7 View"></div>
+                <div class="slider-image"><img src="assets/FINAL_PRODUCTS/Tezzon_Ultra_Type6(2).jpg"
+                    alt="Tezzon Ultra DC 12kW Dual Gun - Type 6 View"></div>
+                <div class="slider-image"><img src="assets/FINAL_PRODUCTS/Tezzon_Ultra_2G (3).jpg"
+                    alt="Tezzon Ultra DC 12kW Dual Gun - Full View"></div>
+              </div>
+              <button class="slider-nav prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+              <button class="slider-nav next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+              <div class="slider-dots">
+                <span class="slider-dot active" onclick="goToSlide(0)"></span>
+                <span class="slider-dot" onclick="goToSlide(1)"></span>
+                <span class="slider-dot" onclick="goToSlide(2)"></span>
+                <span class="slider-dot" onclick="goToSlide(3)"></span>
+
+              </div>
+            </div>
+            <div class="mt-3">
+            </div>
+          </div>
+
+
+          <!-- Right: Product Info -->
+          <div class="col-lg-6 product-info">
+            <h1 class="display-5 fw-bold text-primary mb-3">Tezzon Ultra DC 12kW Dual Gun Type 6 & Type 7</h1>
+            <p class="text-muted mb-2"><strong>2 & 3 Wheeler Fast Chargers</strong></p>
+            <p class="lead text-muted mb-4">Gain 160 km range in 15 minutes. Ultra high-speed DC charger with dual gun
+              for public and commercial use.</p>
+
+            <!-- Compatibility Info -->
+            <div class="mb-3">
+              <p class="mb-2"><strong>Power Rating:</strong> <span class="text-primary">12kW</span></p>
+              <p class="mb-2"><strong>Compatibility:</strong> <span style="font-size: 1.1em;">🏍️</span> 2 Wheeler</p>
+              <p class="mb-2"><strong>Connector type:</strong> Type 6 DC & Type 7 DC (Dual Gun)</p>
+              <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Compatible with OLA, Ather & most
+                2-wheeler EVs</p>
+              <p class="mb-2"><i class="fas fa-info-circle text-info me-2"></i>Cable Length: 2m (both guns)</p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="mb-4">
+              <h4 class="fw-bold text-primary mb-3">
+                <i class="fas fa-star text-warning me-2"></i>Key Features
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Ultra-Fast DC Charger for 2 & 3
+                  Wheeler</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Dual Gun Configuration</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Internet Connected Charger</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Electrical Safety Features</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Gain 160km in 15 mins Charge</li>
+              </ul>
+            </div>
+
+            <!-- View Brochure Button -->
+            <div class="mt-4">
+              <a href="brochure-ultra-dc-12kw-dual.html" target="_blank" class="btn btn-lg"
+                style="background: linear-gradient(135deg, #ff8f00 0%, #ff7043 100%); color: white; box-shadow: 0 4px 15px rgba(255, 143, 0, 0.3);">
+                <i class="fas fa-file-alt me-2"></i>View Product Brochure
+              </a>
+              <p class="text-muted small mt-2">
+                <i class="fas fa-info-circle me-1"></i>Comprehensive product information & specifications
+              </p>
+            </div>
+          </div>
         </div>
-        <button class="slider-nav prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
-        <button class="slider-nav next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
-        <div class="slider-dots">
-          <span class="slider-dot active" onclick="goToSlide(0)"></span>
-          <span class="slider-dot" onclick="goToSlide(1)"></span>
-          <span class="slider-dot" onclick="goToSlide(2)"></span>
-          <span class="slider-dot" onclick="goToSlide(3)"></span>
+      </div>
 
+
+      <!-- Removed standalone generic ADD TO CART button -->
+
+
+      <!-- Detailed Specifications -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-cogs me-2"></i>Technical Specifications</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-bolt me-2"></i>Power Specifications</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Output Power Rating:</strong> 12kW</li>
+                    <li class="mb-2"><strong>Input Voltage:</strong> Single Phase 220VAC±10%</li>
+                    <li class="mb-2"><strong>Output Voltage:</strong> 30-60V DC</li>
+                    <li class="mb-2"><strong>Maximum Output Current:</strong> 200A</li>
+                    <li class="mb-2"><strong>Rated Frequency:</strong> 45-55Hz</li>
+                    <li class="mb-2"><strong>Charger Connector Type:</strong> Type 6 and Type 7 (Dual Gun)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-cog me-2"></i>Physical & Build</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Installation Type:</strong> Wall Mount or Stand Mount</li>
+                    <li class="mb-2"><strong>Dimensions:</strong> 700mm × 594mm × 151mm</li>
+                    <li class="mb-2"><strong>Cable Length:</strong> 2 meters (each gun)</li>
+                    <li class="mb-2"><strong>Weather Protection:</strong> IP 54</li>
+                    <li class="mb-2"><strong>Connectivity:</strong> Wi-Fi, 4G</li>
+                    <li class="mb-2"><strong>Warranty:</strong> 1 Year</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-   <div class="mt-3">
-   </div>
-    </div>
 
-
-    <!-- Right: Product Info -->
-    <div class="col-lg-6 product-info">
-      <h1 class="display-5 fw-bold text-primary mb-3">Tezzon Ultra DC 12kW Dual Gun Type 6 & Type 7</h1>
-      <p class="text-muted mb-2"><strong>2 & 3 Wheeler Fast Chargers</strong></p>
-      <p class="lead text-muted mb-4">Gain 160 km range in 15 minutes. Ultra high-speed DC charger with dual gun for public and commercial use.</p>
-      
-      <!-- Compatibility Info -->
-      <div class="mb-3">
-        <p class="mb-2"><strong>Power Rating:</strong> <span class="text-primary">12kW</span></p>
-        <p class="mb-2"><strong>Compatibility:</strong> <span style="font-size: 1.1em;">🏍️</span> 2 Wheeler</p>
-        <p class="mb-2"><strong>Connector type:</strong> Type 6 DC & Type 7 DC (Dual Gun)</p>
-        <p class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Compatible with OLA, Ather & most 2-wheeler EVs</p>
-        <p class="mb-2"><i class="fas fa-info-circle text-info me-2"></i>Cable Length: 2m (both guns)</p>
+      <!-- Benefits Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-chart-line me-2"></i>Why Buy Tezzon Ultra DC 12kW Dual
+            Gun?</h3>
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                <h5 class="fw-bold">Ultra-Fast Charging</h5>
+                <p class="text-muted">160km range in just 15 minutes</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-wifi fa-3x text-warning mb-3"></i>
+                <h5 class="fw-bold">Internet Connected</h5>
+                <p class="text-muted">Smart monitoring & control</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+                <h5 class="fw-bold">Electrical Safety</h5>
+                <p class="text-muted">Multiple protection features</p>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="text-center p-4">
+                <i class="fas fa-arrows-alt-h fa-3x text-info mb-3"></i>
+                <h5 class="fw-bold">Dual Gun</h5>
+                <p class="text-muted">Type 6 & Type 7 connectors</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <!-- Key Features -->
-      <div class="mb-4">
-        <h4 class="fw-bold text-primary mb-3">
-          <i class="fas fa-star text-warning me-2"></i>Key Features
-        </h4>
-        <ul class="list-unstyled">
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Ultra-Fast DC Charger for 2 & 3 Wheeler</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Dual Gun Configuration</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Internet Connected Charger</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Electrical Safety Features</li>
-          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Gain 160km in 15 mins Charge</li>
-        </ul>
+
+      <!-- Product Description -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-info-circle me-2"></i>Product Description</h3>
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary mb-3">Power Your Ride in Minutes</h5>
+              <p class="mb-3">
+                Experience unparalleled convenience with Tezzon's Ultra-Fast Charger with <strong>dual gun</strong>,
+                designed specifically for modern electric 2-wheelers.
+                With its powerful <strong>12kW capacity</strong> and dual connector configuration supporting both
+                <strong>Type 6 and Type 7</strong>,
+                this charger delivers an impressive charge range of up to <strong>160km in just 15 minutes</strong>,
+                keeping you on the move without the wait.
+              </p>
+
+              <h5 class="fw-bold text-primary mb-3 mt-4">Smart Charging, Anytime, Anywhere</h5>
+              <p class="mb-3">
+                Seamlessly control your charging experience through our intuitive mobile app. Start, stop, and monitor
+                your charging sessions remotely,
+                track your vehicle's charge status in real-time, and access detailed analytics to optimize your ride.
+                The app also enables secure payments
+                and provides updates on charger availability, ensuring a hassle-free experience every time.
+              </p>
+
+              <h5 class="fw-bold text-primary mb-3 mt-4">Reliable and Compact</h5>
+              <p class="mb-0">
+                Built with cutting-edge technology, this ultra-fast charger combines speed with safety, ensuring
+                consistent and reliable performance.
+                Its compact and robust design makes it ideal for homes, workplaces, and public charging stations,
+                enabling effortless installation
+                and integration into any environment. The dual gun configuration allows you to charge different vehicle
+                types simultaneously,
+                maximizing efficiency and reducing wait times at busy charging stations.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- View Brochure Button -->
-      <div class="mt-4">
-        <a href="brochure-ultra-dc-12kw-dual.html" target="_blank" class="btn btn-lg" 
-           style="background: linear-gradient(135deg, #ff8f00 0%, #ff7043 100%); color: white; box-shadow: 0 4px 15px rgba(255, 143, 0, 0.3);">
-          <i class="fas fa-file-alt me-2"></i>View Product Brochure
+      <!-- Advanced Features -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-rocket me-2"></i>Smart Features & Protection</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-microchip me-2"></i>Smart Features</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OTA (Over-The-Air) Support</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>QR Code User Authentication</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Pattern Charging Indication</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cloud-Based Remote Monitoring</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OCPP 1.6J Support</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Dual Gun Management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-shield-alt me-2"></i>Protection & Safety</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Short Circuit Protection</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Input Over Voltage Protection</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Input Under Voltage Protection</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Earth Detection</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Output Reverse Polarity</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Emergency Push Button</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Usage & Support -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-tools me-2"></i>Usage & Support</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-home me-2"></i>Suggested Usage</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Home / Personal use - Ultra-fast home
+                      charging</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Public charging stations - Serve
+                      multiple vehicle types</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Commercial EV fleets</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Office & workplace parking</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fleet operators & logistics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title text-primary"><i class="fas fa-headset me-2"></i>Customer Support</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>24/7 Support:</strong>
+                      Available 365 days</li>
+                    <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Support Hotline:</strong> +91
+                      8447746385</li>
+                    <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Sales Hotline:</strong> +91
+                      8045688455</li>
+                    <li class="mb-2"><i class="fas fa-clock text-success me-2"></i><strong>Sales Hours:</strong> 9:00am
+                      - 6:00pm (Mon-Sun)</li>
+                    <li class="mb-2"><i class="fas fa-certificate text-success me-2"></i>1 Year Warranty</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="fw-bold text-primary mb-4"><i class="fas fa-question-circle me-2"></i>Frequently Asked Questions
+          </h3>
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  What is the Tezzon Ultra DC 12kW Dual Gun charger, and who is it for?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The Tezzon Ultra DC 12kW Dual Gun is an ultra-fast DC charger designed for public charging stations,
+                  fleet operators, and commercial EV users who need the quickest charging solutions with dual connector
+                  support.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  What type of connectors does the Tezzon Ultra DC 12kW Dual Gun support?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The charger supports both Type 6 and Type 7 connectors in a dual gun configuration, ensuring
+                  compatibility with most modern electric vehicles, including OLA and Ather vehicles.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  What is the cable length provided for Tezzon Ultra DC 12kW Dual Gun chargers?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The cable length is 2 meters for each gun (both Type 6 and Type 7).
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+                  How fast can the Tezzon Ultra DC 12kW Dual Gun charge an EV?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The Tezzon Ultra DC 12kW Dual Gun charger can provide a 160km range in just 15 minutes for 2-wheelers,
+                  making it ideal for high-usage scenarios and commercial applications.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
+                  How does Tezzon Ultra DC 12kW Dual Gun handle power surges and fluctuations?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  It has built-in power surge protection and voltage regulation mechanisms to ensure safe charging and
+                  protect EV batteries.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq6">
+                  What is the IP rating of the Tezzon Ultra DC 12kW Dual Gun charger?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  It has an IP54 rating, providing dust and water resistance, making it suitable for outdoor
+                  installations.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq7">
+                  Does the Tezzon Ultra DC 12kW Dual Gun charger support remote monitoring?
+                </button>
+              </h2>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, it comes with cloud-based remote monitoring, allowing operators to track charging sessions,
+                  energy usage, and status in real time.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq8">
+                  Is Tezzon Ultra DC 12kW Dual Gun suitable for commercial EV fleets?
+                </button>
+              </h2>
+              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! It is designed for fleet operators, offering ultra-fast turnaround times and high efficiency for
+                  continuous operations with dual gun capability.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 9 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq9">
+                  Does Tezzon Ultra DC 12kW Dual Gun support over-the-air (OTA) updates?
+                </button>
+              </h2>
+              <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! The charger receives OTA firmware updates to enhance features, security, and performance.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 10 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq10">
+                  What warranty does Tezzon Ultra DC 12kW Dual Gun come with?
+                </button>
+              </h2>
+              <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The Tezzon Ultra DC 12kW Dual Gun comes with a 1-year standard warranty from the date of purchase.
+                  This covers manufacturing defects and issues arising under normal usage.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 11 -->
+            <div class="accordion-item border-0 shadow-sm mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq11">
+                  Can I charge two vehicles simultaneously with the Dual Gun?
+                </button>
+              </h2>
+              <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! The dual gun configuration allows you to charge two different vehicles simultaneously - one with
+                  Type 6 connector and one with Type 7 connector, maximizing station efficiency at ultra-fast 12kW
+                  speeds.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Products -->
+      <div class="text-center my-5">
+        <a href="products.html" class="btn btn-outline-primary btn-lg me-3"
+          style="background: linear-gradient(135deg, #ffb347 0%, #ff8f00 50%, #ff7043 500%); color: #000;">
+          <i class="fas fa-arrow-left me-2"></i>Back to Products
         </a>
-        <p class="text-muted small mt-2">
-          <i class="fas fa-info-circle me-1"></i>Comprehensive product information & specifications
-        </p>
       </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Removed standalone generic ADD TO CART button -->
-
-
-    <!-- Detailed Specifications -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-cogs me-2"></i>Technical Specifications</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-bolt me-2"></i>Power Specifications</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><strong>Output Power Rating:</strong> 12kW</li>
-                  <li class="mb-2"><strong>Input Voltage:</strong> Single Phase 220VAC±10%</li>
-                  <li class="mb-2"><strong>Output Voltage:</strong> 30-60V DC</li>
-                  <li class="mb-2"><strong>Maximum Output Current:</strong> 200A</li>
-                  <li class="mb-2"><strong>Rated Frequency:</strong> 45-55Hz</li>
-                  <li class="mb-2"><strong>Charger Connector Type:</strong> Type 6 and Type 7 (Dual Gun)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-cog me-2"></i>Physical & Build</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><strong>Installation Type:</strong> Wall Mount or Stand Mount</li>
-                  <li class="mb-2"><strong>Dimensions:</strong> 700mm × 594mm × 151mm</li>
-                  <li class="mb-2"><strong>Cable Length:</strong> 2 meters (each gun)</li>
-                  <li class="mb-2"><strong>Weather Protection:</strong> IP 54</li>
-                  <li class="mb-2"><strong>Connectivity:</strong> Wi-Fi, 4G</li>
-                  <li class="mb-2"><strong>Warranty:</strong> 1 Year</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Benefits Section -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-chart-line me-2"></i>Why Buy Tezzon Ultra DC 12kW Dual Gun?</h3>
-        <div class="row">
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
-              <h5 class="fw-bold">Ultra-Fast Charging</h5>
-              <p class="text-muted">160km range in just 15 minutes</p>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-wifi fa-3x text-warning mb-3"></i>
-              <h5 class="fw-bold">Internet Connected</h5>
-              <p class="text-muted">Smart monitoring & control</p>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
-              <h5 class="fw-bold">Electrical Safety</h5>
-              <p class="text-muted">Multiple protection features</p>
-            </div>
-          </div>
-          <div class="col-md-3 mb-4">
-            <div class="text-center p-4">
-              <i class="fas fa-arrows-alt-h fa-3x text-info mb-3"></i>
-              <h5 class="fw-bold">Dual Gun</h5>
-              <p class="text-muted">Type 6 & Type 7 connectors</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Description -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-info-circle me-2"></i>Product Description</h3>
-        <div class="card border-0 shadow-sm">
-          <div class="card-body">
-            <h5 class="fw-bold text-primary mb-3">Power Your Ride in Minutes</h5>
-            <p class="mb-3">
-              Experience unparalleled convenience with Tezzon's Ultra-Fast Charger with <strong>dual gun</strong>, designed specifically for modern electric 2-wheelers. 
-              With its powerful <strong>12kW capacity</strong> and dual connector configuration supporting both <strong>Type 6 and Type 7</strong>, 
-              this charger delivers an impressive charge range of up to <strong>160km in just 15 minutes</strong>, keeping you on the move without the wait.
-            </p>
-            
-            <h5 class="fw-bold text-primary mb-3 mt-4">Smart Charging, Anytime, Anywhere</h5>
-            <p class="mb-3">
-              Seamlessly control your charging experience through our intuitive mobile app. Start, stop, and monitor your charging sessions remotely, 
-              track your vehicle's charge status in real-time, and access detailed analytics to optimize your ride. The app also enables secure payments 
-              and provides updates on charger availability, ensuring a hassle-free experience every time.
-            </p>
-            
-            <h5 class="fw-bold text-primary mb-3 mt-4">Reliable and Compact</h5>
-            <p class="mb-0">
-              Built with cutting-edge technology, this ultra-fast charger combines speed with safety, ensuring consistent and reliable performance. 
-              Its compact and robust design makes it ideal for homes, workplaces, and public charging stations, enabling effortless installation 
-              and integration into any environment. The dual gun configuration allows you to charge different vehicle types simultaneously, 
-              maximizing efficiency and reducing wait times at busy charging stations.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Advanced Features -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-rocket me-2"></i>Smart Features & Protection</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-microchip me-2"></i>Smart Features</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OTA (Over-The-Air) Support</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>QR Code User Authentication</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>LED Pattern Charging Indication</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cloud-Based Remote Monitoring</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>OCPP 1.6J Support</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Dual Gun Management</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-shield-alt me-2"></i>Protection & Safety</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Short Circuit Protection</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Input Over Voltage Protection</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Input Under Voltage Protection</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Earth Detection</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Output Reverse Polarity</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Emergency Push Button</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Usage & Support -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-tools me-2"></i>Usage & Support</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-home me-2"></i>Suggested Usage</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Home / Personal use - Ultra-fast home charging</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Public charging stations - Serve multiple vehicle types</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Commercial EV fleets</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Office & workplace parking</li>
-                  <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fleet operators & logistics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-primary"><i class="fas fa-headset me-2"></i>Customer Support</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>24/7 Support:</strong> Available 365 days</li>
-                  <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Support Hotline:</strong> +91 8447746385</li>
-                  <li class="mb-2"><i class="fas fa-phone text-success me-2"></i><strong>Sales Hotline:</strong> +91 8045688455</li>
-                  <li class="mb-2"><i class="fas fa-clock text-success me-2"></i><strong>Sales Hours:</strong> 9:00am - 6:00pm (Mon-Sun)</li>
-                  <li class="mb-2"><i class="fas fa-certificate text-success me-2"></i>1 Year Warranty</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h3 class="fw-bold text-primary mb-4"><i class="fas fa-question-circle me-2"></i>Frequently Asked Questions</h3>
-        <div class="accordion" id="faqAccordion">
-          <!-- FAQ 1 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                What is the Tezzon Ultra DC 12kW Dual Gun charger, and who is it for?
-              </button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The Tezzon Ultra DC 12kW Dual Gun is an ultra-fast DC charger designed for public charging stations, fleet operators, and commercial EV users who need the quickest charging solutions with dual connector support.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 2 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                What type of connectors does the Tezzon Ultra DC 12kW Dual Gun support?
-              </button>
-            </h2>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The charger supports both Type 6 and Type 7 connectors in a dual gun configuration, ensuring compatibility with most modern electric vehicles, including OLA and Ather vehicles.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 3 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                What is the cable length provided for Tezzon Ultra DC 12kW Dual Gun chargers?
-              </button>
-            </h2>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The cable length is 2 meters for each gun (both Type 6 and Type 7).
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 4 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                How fast can the Tezzon Ultra DC 12kW Dual Gun charge an EV?
-              </button>
-            </h2>
-            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The Tezzon Ultra DC 12kW Dual Gun charger can provide a 160km range in just 15 minutes for 2-wheelers, making it ideal for high-usage scenarios and commercial applications.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 5 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                How does Tezzon Ultra DC 12kW Dual Gun handle power surges and fluctuations?
-              </button>
-            </h2>
-            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                It has built-in power surge protection and voltage regulation mechanisms to ensure safe charging and protect EV batteries.
-              </div>
-            </div>
-          </div>
-          
-          <!-- FAQ 6 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                What is the IP rating of the Tezzon Ultra DC 12kW Dual Gun charger?
-              </button>
-            </h2>
-            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                It has an IP54 rating, providing dust and water resistance, making it suitable for outdoor installations.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 7 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                Does the Tezzon Ultra DC 12kW Dual Gun charger support remote monitoring?
-              </button>
-            </h2>
-            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes, it comes with cloud-based remote monitoring, allowing operators to track charging sessions, energy usage, and status in real time.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 8 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
-                Is Tezzon Ultra DC 12kW Dual Gun suitable for commercial EV fleets?
-              </button>
-            </h2>
-            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes! It is designed for fleet operators, offering ultra-fast turnaround times and high efficiency for continuous operations with dual gun capability.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 9 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
-                Does Tezzon Ultra DC 12kW Dual Gun support over-the-air (OTA) updates?
-              </button>
-            </h2>
-            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes! The charger receives OTA firmware updates to enhance features, security, and performance.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 10 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
-                What warranty does Tezzon Ultra DC 12kW Dual Gun come with?
-              </button>
-            </h2>
-            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The Tezzon Ultra DC 12kW Dual Gun comes with a 1-year standard warranty from the date of purchase. This covers manufacturing defects and issues arising under normal usage.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 11 -->
-          <div class="accordion-item border-0 shadow-sm mb-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
-                Can I charge two vehicles simultaneously with the Dual Gun?
-              </button>
-            </h2>
-            <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes! The dual gun configuration allows you to charge two different vehicles simultaneously - one with Type 6 connector and one with Type 7 connector, maximizing station efficiency at ultra-fast 12kW speeds.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Back to Products -->
-    <div class="text-center my-5">
-      <a href="products.html" class="btn btn-outline-primary btn-lg me-3" style="background: linear-gradient(135deg, #ffb347 0%, #ff8f00 50%, #ff7043 500%); color: #000;">
-        <i class="fas fa-arrow-left me-2"></i>Back to Products
-      </a>
-    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-4 mt-5" style="background: linear-gradient(135deg, #0056b3 0%, white 100%); color: #000;">
+  <footer class="text-center py-4 mt-5"
+    style="background: linear-gradient(135deg, #0056b3 0%, white 100%); color: #000;">
     <p class="mb-0 fw-medium">&copy; 2025 Tezzon Charge | Powering the future of mobility ⚡</p>
   </footer>
 
-     <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slider-image');
@@ -500,51 +537,144 @@
     .product-image-container img {
       transition: transform 0.3s ease;
     }
+
     .product-image-container img:hover {
       transform: scale(1.05);
     }
+
     .card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
     }
-    
-    .image-slider { position: relative; width: 100%; height: 560px; overflow: hidden; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-    .slider-wrapper { position: relative; width: 100%; height: 100%; }
-    .slider-image { position: absolute; width: 100%; height: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; display: flex; align-items: center; justify-content: center; background: #f8f9fa; }
-    .slider-image.active { opacity: 1; }
-    .slider-image img { max-width: 100%; height: auto; max-height: 560px; object-fit: contain; }
-    .slider-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 86, 179, 0.8); color: white; border: none; width: 50px; height: 50px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s ease; z-index: 10; }
-    .slider-nav:hover { background: rgba(0, 86, 179, 1); transform: translateY(-50%) scale(1.1); }
-    .slider-nav.prev { left: 15px; }
-    .slider-nav.next { right: 15px; }
-    .slider-dots { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; z-index: 10; }
-    .slider-dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(0, 86, 179, 0.4); border: 2px solid #0056b3; cursor: pointer; transition: all 0.3s ease; }
-    .slider-dot.active { background: #0056b3; transform: scale(1.3); }
-    
+
+    .image-slider {
+      position: relative;
+      width: 100%;
+      height: 560px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .slider-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slider-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f9fa;
+    }
+
+    .slider-image.active {
+      opacity: 1;
+    }
+
+    .slider-image img {
+      max-width: 100%;
+      height: auto;
+      max-height: 560px;
+      object-fit: contain;
+    }
+
+    .slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 86, 179, 0.8);
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    .slider-nav:hover {
+      background: rgba(0, 86, 179, 1);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .slider-nav.prev {
+      left: 15px;
+    }
+
+    .slider-nav.next {
+      right: 15px;
+    }
+
+    .slider-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 10;
+    }
+
+    .slider-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(0, 86, 179, 0.4);
+      border: 2px solid #0056b3;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .slider-dot.active {
+      background: #0056b3;
+      transform: scale(1.3);
+    }
+
     /* Product hero image full width within its column */
     .product-hero-img {
       width: 100%;
       height: auto;
       object-fit: contain;
       border-radius: 10px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       max-height: 560px;
     }
 
     /* Tighter gutters and section spacing */
-    .container .row { 
-      --bs-gutter-x: 1rem; 
-      --bs-gutter-y: 1.25rem; 
+    .container .row {
+      --bs-gutter-x: 1rem;
+      --bs-gutter-y: 1.25rem;
     }
-    .row.mt-5 { margin-top: 2rem !important; }
+
+    .row.mt-5 {
+      margin-top: 2rem !important;
+    }
 
     /* Slightly lower the right-side info column */
-    .product-info { margin-top: 0.75rem; }
-    @media (min-width: 768px) { .product-info { margin-top: 1.25rem; } }
+    .product-info {
+      margin-top: 0.75rem;
+    }
+
+    @media (min-width: 768px) {
+      .product-info {
+        margin-top: 1.25rem;
+      }
+    }
   </style>
 
 </body>
+
 </html>

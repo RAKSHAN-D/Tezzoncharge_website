@@ -31,6 +31,12 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
+    max-width: 100vw;
+}
+
+html {
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 /* Smooth Scrolling */
@@ -111,6 +117,23 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+/* Navbar Mobile Styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 0;
+        margin: 0;
+    }
+    
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+}
+
 /* Hero Section */
 .hero-section {
   background: white;
@@ -142,6 +165,10 @@ h1, h2, h3, h4, h5, h6 {
     animation: slideInRight 1s ease-out;
 }
 
+.hero-heading {
+    margin-top: -60px;
+}
+
 .hero-buttons .btn {
     margin: 0.5rem;
     padding: 12px 30px;
@@ -163,6 +190,12 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     display: inline-block;
     animation: float 3s ease-in-out infinite;
+}
+
+.charging-station-img {
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
 }
 
 .charging-animation {
@@ -335,6 +368,31 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color) !important;
 }
 
+.social-icons-wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Fallback for browsers without gap support */
+.social-icons-wrapper > * {
+    margin: 0.5rem;
+}
+
+.social-icon-link {
+    color: #000;
+    font-size: 30px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-link:hover {
+    color: #ff8f00;
+    transform: scale(1.2) translateY(-3px);
+}
+
 /* Footer */
 footer {
     background:  linear-gradient(135deg, #0056b3 0%, white 100%); 
@@ -421,18 +479,30 @@ footer {
         text-align: center;
     }
     
+    .hero-heading {
+        margin-top: 0 !important;
+    }
+    
     .display-3 {
         font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        width: 100%;
     }
     
     .hero-buttons .btn {
         display: block;
         width: 100%;
-        margin: 0.5rem 0;
+        margin: 0.5rem 0 !important;
     }
     
     .charging-station-mockup {
         margin-top: 2rem;
+    }
+    
+    .charging-station-img {
+        max-height: 300px;
     }
     
     .pulse-ring {
@@ -441,35 +511,100 @@ footer {
     }
     
     .stats-section .stat-item {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .stats-section .stat-item h2 {
+        font-size: 2.5rem;
+    }
+    
+    .stats-section .stat-item p {
+        font-size: 0.95rem;
+    }
+    
+    .technology-features .feature-item {
+        padding: 0.75rem;
+        font-size: 0.9rem;
     }
     
     .technology-features .feature-item:hover {
         transform: none;
     }
     
+    .feature-card {
+        padding: 1.5rem !important;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-card i {
+        font-size: 2.5rem !important;
+    }
+    
+    .feature-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
     .contact-buttons .btn {
         display: block;
         width: 100%;
+        max-width: 350px;
+        margin: 0.5rem 0 !important;
     }
 }
 
 @media (max-width: 576px) {
+    body {
+        font-size: 0.9rem;
+    }
+    
+    section {
+        padding: 2rem 0 !important;
+    }
+    
     .display-3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.3;
     }
     
     .display-4 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     .display-5 {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
     }
     
     .pulse-ring {
         width: 100px;
         height: 100px;
+    }
+    
+    .hero-logo img {
+        max-height: 250px !important;
+    }
+    
+    .technology-visual {
+        padding: 2rem !important;
+    }
+    
+    .charging-steps .step {
+        padding: 0.75rem !important;
+        font-size: 0.85rem;
+    }
+    
+    .about-image {
+        padding: 2rem !important;
     }
 }
 
@@ -702,4 +837,41 @@ footer {
 .text-warning {
     --bs-text-opacity: 1;
     color: #ff8f00!important;
+}
+
+/* Media Section Responsive Images */
+.media-image, .gallery-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.media-video {
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .media-image, .gallery-image {
+        height: 200px;
+    }
+    
+    .media-video {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .media-image, .gallery-image {
+        height: 180px;
+    }
+    
+    .media-video {
+        height: 180px;
+    }
+    
+    .social-icon-link {
+        font-size: 24px;
+        padding: 8px;
+    }
 }
