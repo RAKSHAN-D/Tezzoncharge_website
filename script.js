@@ -1,16 +1,16 @@
 // Counter animation for stats
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const counters = document.querySelectorAll('.counter');
-  
+
   const animateCounter = (counter) => {
     const target = parseInt(counter.getAttribute('data-target'));
     let current = 0;
-    const increment = target / 100;
+    const increment = target / 50;
     const updateCounter = () => {
       if (current < target) {
         current += increment;
         counter.textContent = Math.floor(current).toLocaleString();
-        setTimeout(updateCounter, 30);
+        setTimeout(updateCounter, 10);
       } else {
         counter.textContent = target.toLocaleString();
       }
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Smooth scroll behavior
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
