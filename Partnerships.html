@@ -134,6 +134,66 @@
       font-weight: bold;
       margin-bottom: 2rem;
     }
+
+    /* Form Styles */
+    .form-card {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      padding: 3rem;
+      max-width: 800px;
+      width: 100%;
+      margin: 2rem auto;
+    }
+
+    .form-title {
+      color: #ff8f00;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid #dee2e6;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: #ff8f00;
+      box-shadow: 0 0 0 0.25rem rgba(255, 143, 0, 0.25);
+    }
+
+    .btn-submit {
+      background: linear-gradient(135deg, #ff8f00 0%, #ffc947 100%);
+      color: black;
+      font-weight: bold;
+      padding: 0.8rem 2.5rem;
+      border-radius: 50px;
+      border: none;
+      transition: all 0.3s ease;
+      width: 100%;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 143, 0, 0.4);
+      color: black;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
@@ -147,7 +207,7 @@
     <div class="container">
       <h1 class="display-4">Partner with Tezzon Charge</h1>
       <p class="lead">Join India's fast-growing ultra-fast EV charging revolution. Let's power the future, together.</p>
-      <a href="Contact.html" class="btn btn-partner btn-lg">
+      <a href="#partner-form" class="btn btn-partner btn-lg">
         Become a Partner
       </a>
     </div>
@@ -213,11 +273,13 @@
       <h2 class="text-center section-title-blue">How to Get Started</h2>
       <div class="row">
         <div class="col-md-3">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <h5>Fill Interest Form</h5>
-            <p class="text-muted">Provide your basic details and site info.</p>
-          </div>
+          <a href="#partner-form" class="text-decoration-none">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h5>Fill Interest Form</h5>
+              <p class="text-muted">Provide your basic details and site info.</p>
+            </div>
+          </a>
         </div>
         <div class="col-md-3">
           <div class="step-card">
@@ -244,13 +306,88 @@
     </div>
   </section>
 
+  <!-- Application Form Section -->
+  <section id="partner-form" class="py-5 bg-light">
+    <div class="container">
+      <div class="form-card">
+        <h2 class="form-title text-center">Partner Application Form</h2>
+        <form action="#" method="POST">
+          <div class="row g-4">
+            <!-- Full Name -->
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name"
+                required>
+            </div>
+
+            <!-- Email ID -->
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email ID</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com"
+                required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number"
+                required>
+            </div>
+
+            <!-- City -->
+            <div class="col-md-6">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city" required>
+            </div>
+
+            <!-- Partner Type -->
+            <div class="col-md-6">
+              <label for="partnerType" class="form-label">Partner Type</label>
+              <select class="form-select" id="partnerType" name="partnerType" required>
+                <option value="" selected disabled>Select Partner Type</option>
+                <option value="Station Host">Station Host</option>
+                <option value="Franchise Partner">Franchise Partner</option>
+                <option value="Fleet Partner">Fleet Partner</option>
+                <option value="Commercial Property Owner">Commercial Property Owner</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <!-- Location -->
+            <div class="col-md-6">
+              <label for="location" class="form-label">Location (Area / Locality / PIN)</label>
+              <input type="text" class="form-control" id="location" name="location"
+                placeholder="e.g. Indiranagar / 560038" required>
+            </div>
+
+            <!-- Location Ownership -->
+            <div class="col-12">
+              <label for="ownership" class="form-label">Location Ownership / Control</label>
+              <select class="form-select" id="ownership" name="ownership" required>
+                <option value="" selected disabled>Select Ownership Status</option>
+                <option value="I own the location">I own the location</option>
+                <option value="I have lease / written permission">I have lease / written permission</option>
+                <option value="I do not own or control the location">I do not own or control the location</option>
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-12 mt-4">
+              <button type="submit" class="btn btn-submit">Submit Application</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- Final CTA -->
   <section class="cta-section">
     <div class="container">
       <h2 class="display-5">Ready to partner with us?</h2>
       <p class="lead mb-4">Let's build a greener, faster India—together.</p>
-      <a href="Contact.html" class="btn btn-partner btn-lg">
-        Contact Us
+      <a href="#partner-form" class="btn btn-partner btn-lg">
+        Become a Partner
       </a>
     </div>
   </section>
@@ -263,6 +400,57 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector('#partner-form form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerText;
+
+      // Client-side validation
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+
+      // Map ownership to locationOwnership for backend compatibility
+      data.locationOwnership = data.ownership;
+      delete data.ownership;
+
+      try {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Submitting...';
+
+        const response = await fetch('http://localhost:3000/api/partners', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          // Success confirmation
+          document.querySelector('#partner-form .form-card').innerHTML = `
+                        <div class="text-center py-5">
+                            <i class="fas fa-check-circle display-1 text-success mb-4"></i>
+                            <h2 class="form-title">Application Submitted!</h2>
+                            <p class="lead text-muted">Thank you for your interest in Tezzon Charge. <br> Our team will review your application and get back to you soon.</p>
+                            <a href="index.html" class="btn btn-submit mt-4" style="width: auto;">Back to Home</a>
+                        </div>
+                    `;
+        } else {
+          alert(result.error || 'Something went wrong. Please try again.');
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      } catch (error) {
+        console.error('Submission error:', error);
+        alert('Could not connect to the server. Please try again later.');
+        submitBtn.disabled = false;
+        submitBtn.innerText = originalBtnText;
+      }
+    });
+  </script>
 </body>
 
 </html>

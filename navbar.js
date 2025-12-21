@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "products.html": "nav-products",
         "FAQ.html": "nav-faq",
         "About_us.html": "nav-about",
-        "Partnerships.html": "nav-partnerships"
+        "Partnerships.html": "nav-partnerships",
+        "become-a-partner.html": "nav-become-partner"
     };
 
     // Handle product sub-pages (keep Products active)
