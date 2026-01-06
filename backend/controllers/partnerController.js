@@ -1,4 +1,4 @@
-import Partner from '../models/Partner.js';
+import * as partnerService from '../services/partnerService.js';
 
 /**
  * Handle new partner application submission
@@ -8,35 +8,39 @@ export const createPartner = async (req, res) => {
     try {
         const { fullName, email, phone, city, partnerType, location, locationOwnership } = req.body;
 
-        // 1. Validate all required fields
+        // 1. Controller Checks: Is request valid? Do required fields exist?
         if (!fullName || !email || !phone || !city || !partnerType || !location || !locationOwnership) {
+            console.log('[Controller] Validation Failed: Missing required fields');
             return res.status(400).json({
                 error: 'Missing required fields. Please provide all information.'
             });
         }
 
-        // 2. Map camelCase request fields to snake_case PostgreSQL columns via Sequelize model
-        // 3. Insert a new record into the partners table
-        // 4. Set status = 'PENDING' and created_at handled by model/DB
-        const newPartner = await Partner.create({
+        // 2. Controller Checks: Who is calling? (Context/Identity check)
+        // For public forms, we might log the IP or User-Agent, or check session if applicable
+        const clientIp = req.ip || req.headers['x-forwarded-for'] || 'unknown';
+        console.log(`[Controller] Incoming request from: ${clientIp} for email: ${email}`);
+
+        // 3. Delegation: "Service, do the actual work"
+        const newPartner = await partnerService.createPartnerApplication({
             fullName,
             email,
             phone,
             city,
             partnerType,
             location,
-            locationOwnership,
-            status: 'PENDING'
+            locationOwnership
         });
 
-        // 7. Return a JSON success response
+        // 4. Controller gets result back & converts it to HTTP response
+        console.log(`[Controller] Service completed work. New Partner ID: ${newPartner.id}`);
         return res.status(201).json({
             message: 'Partner application submitted successfully!',
             partnerId: newPartner.id
         });
 
     } catch (error) {
-        console.error('Error in createPartner:', error);
+        console.error('[Controller] Error caught:', error.message);
 
         // Handle unique constraint violation (e.g., duplicate email)
         if (error.name === 'SequelizeUniqueConstraintError') {
